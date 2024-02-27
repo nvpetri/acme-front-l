@@ -15,5 +15,5 @@ export async function getFilme(id) {
     const response = await fetch(url)
     const filme = await response.json()
 
-    return filme.filme
+    return filme.filme[0]
 }
